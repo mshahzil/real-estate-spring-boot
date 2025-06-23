@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA6PUICQHNDHRNFSMQ
+      secret-key: 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
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: square9images
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 50MB
+      max-file-size: 200MB
+      max-request-size: 200MB
+logging:
+  file:
+    name: logs/logs.log
